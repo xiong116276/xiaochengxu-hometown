@@ -1,0 +1,18 @@
+/* miniprogram/pages/detail/detail.wxss */
+.detail-title{
+  text-align: center;
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 50rpx;
+}
+.detail-img{
+  height: 400rpx;
+}
+.detail-text{
+  font-size:30rpx;
+  padding: 20rpx;
+}
+.detail-text .text-item{
+  text-indent: 50rpx;
+  margin-bottom: 10rpx;
+}

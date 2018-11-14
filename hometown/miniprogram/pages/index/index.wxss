@@ -1,0 +1,8 @@
+/* index.wxss */
+.introduction{
+  padding: 20rpx;
+  margin-bottom: 40rpx;
+}
+.introduction-img{
+ height:400rpx; 
+}

@@ -1,0 +1,14 @@
+/* miniprogram/pages/about/about.wxss */
+.about-content{
+  padding: 20rpx;
+}
+.text-title{
+  color: #3c763d;
+  font-weight: bold;
+  margin-bottom: 15rpx;
+  font-size: 34rpx;
+}
+.text-describe{
+  text-indent: 50rpx;
+  margin-bottom: 20rpx;
+}

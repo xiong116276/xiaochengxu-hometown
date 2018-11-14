@@ -1,0 +1,15 @@
+<!--pages/header.wxml-->
+<header-component>
+  <view class='header'>
+    <button class='user-head' open-type="getUserInfo" 
+      bindgetuserinfo="onGetUser" style='background-image:url("{{avatarUrl?avatarUrl:\"\/components\/header\/user-unlogin.png\"}}")'></button>
+    <view class='navbar'>
+      <view class='btn-toogle-nav {{navShow?"btnGray":"btnWhite"}}' bindtap="navToogle">
+        <image src='../../images/icon-menu.png'></image>
+      </view>
+      <view wx:if="{{navShow}}" class='nav-list'>
+        <navigator open-type='redirect' class='nav-item' wx:for="{{navlist}}" wx:for-item="navItem" url='{{navItem.url}}'>{{navItem.title}}</navigator>
+      </view>
+    </view>
+  </view>
+</header-component>

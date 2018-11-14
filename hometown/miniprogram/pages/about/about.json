@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "header-component": "../../components/header/header",
+    "banner-component": "../../components/banner/banner",
+    "footer-component": "../../components/footer/footer"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "header-component": "../../components/header/header",
+    "banner-component":"../../components/banner/banner",
+    "footer-component": "../../components/footer/footer",
+    "showitem-component":"../../components/showitem/showitem"
+  },
+  "navigationBarTitleText": "淅川-景点"
+}

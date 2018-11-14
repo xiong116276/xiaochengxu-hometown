@@ -1,0 +1,12 @@
+<!--components/footer/footer.wxml-->
+<footer-component>
+  <view class='footer'>
+    <view class='text-title'>联系方式</view>
+    <view class='connect-way'>
+      <view class='connect-item' wx:for='{{connect}}'>
+        <image id='{{item.id}}' bindlongpress='distinguish' src='{{item.img}}'></image>
+        <text>{{item.text}}</text>
+      </view>
+    </view>
+  </view>
+</footer-component>

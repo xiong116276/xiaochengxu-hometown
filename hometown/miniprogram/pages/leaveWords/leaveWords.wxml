@@ -1,0 +1,51 @@
+<!--miniprogram/pages/leaveWords/leaveWords.wxml-->
+<!-- 引入header组件 -->
+<header-component avatar-url="{{avatarUrl}}"/>  
+<!-- 首页轮播组件 -->
+<banner-component />
+<!-- leave-words content -->
+<view wx:if="{{showLeaveWords}}" class='leave-words-list'>
+  <view class='words-list-top'><text>留言列表</text><text bindtap='showForm' style='color:green'>添加留言</text></view>
+  <view class='list-words'>
+    <view class='list-item' wx:for="{{showList}}" wx:for-item="listItem" wx:for-index="listIndex" wx:key="{{listIndex}}">
+      <view class='item-top'>
+        <text>{{listItem.nickName}}</text><text>第{{(listIndex + 1)+((pageIndex-1)*pageSize)}}楼</text>
+      </view>
+      <view class='item-content'>{{listItem.leaveContent}}</view>
+      <view class='item-bottom'>{{listItem.ltime}}</view>
+    </view>
+  </view>
+  <view class='pages'>
+    <button bindtap='btnPrev' disabled='{{pageIndex === 1}}'>上一页</button>
+    <view class='page-choose'>
+      <text class='page-num'>共{{pageCount}}页  第{{pageIndex}}页</text>
+      <input class='page-input' type='number' bindinput='bindKeyInput'></input><button disabled='{{pageCout === 1}}' class='btn-skip' bindtap='btnSkip'>跳转</button>
+    </view>
+    <button bindtap='btnNext' disabled='{{pageIndex === pageCount}}'>下一页</button>
+  </view>
+</view>
+<view wx:else class='leave-words'>
+  <view class='text-title'>请留言</view>
+  <form bindsubmit='formSubmit' bindreset='formReset'>
+    <view class='input-group'>
+      <view class='input-title'><text class='star'>* </text>昵称：</view>
+      <input class='input-content' name='nickName' placeholder='请输入昵称' bindinput='inputNickName' value='{{nickName}}'></input>
+    </view>
+    <view class='input-group'>
+      <view class='input-title'><text class='star'>* </text>联系方式：</view>
+      <input class='input-content' name='contact' placeholder='手机/QQ/邮箱' bindinput='inputContact' value='{{contact}}'></input>
+    </view>
+    <view class='input-group'>
+      <view class='input-title'><text class='star'>* </text>反馈内容：</view>
+      <textarea class='input-content' name='leaveContent' placeholder='请输入留言内容' bindinput='inputLeaveWords' value='{{leaveWords}}'></textarea>
+    </view>
+    <view class="btn-area">
+      <button formType="reset">重置</button>
+      <button formType="submit">提交</button>
+    </view>
+    <view style='text-align:right;margin:10rpx;color:green' bindtap='showList'>查看留言列表 ></view>
+  </form>
+</view>
+
+<!-- 底部组件 -->
+<footer-component />

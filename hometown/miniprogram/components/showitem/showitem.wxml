@@ -1,0 +1,8 @@
+<!--components/showItem/showItem.wxml-->
+<showitem-component>
+  <view class='show-item' id='{{itemData._id}}' bindtap='showDetail'>
+    <image src='{{itemData.img[0]}}'></image>
+    <view class='text-title'>{{itemData.title}}</view>
+    <view class='text-content'>{{itemData.text[0]}}</view>
+  </view>
+</showitem-component>

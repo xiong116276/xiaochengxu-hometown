@@ -1,0 +1,17 @@
+<!--miniprogram/pages/detail/detail.wxml-->
+<!-- 标题 -->
+<view class='detail-title'>{{detail.title}}</view>
+<!-- 图片 -->
+<swiper class='detail-img' indicator-dots='{{indicatorDots}}' autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular='true'  indicator-active-color='rgba(255,255,255,1)'>
+    <block wx:for="{{detail.img}}" wx:for-index='index' wx:key='index' wx:for-item="imgItem">
+      <swiper-item>
+        <image bindtap='showImg' class='banner-img' src='{{imgItem}}' id='{{index}}'></image>
+      </swiper-item>
+    </block>
+</swiper>
+<!-- 文字 -->
+<view class='detail-text'>
+  <view class='text-item' wx:for="{{detail.text}}" wx:for-item="textItem">{{textItem}}</view>
+</view>
+
+

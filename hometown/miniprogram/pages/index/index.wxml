@@ -1,0 +1,22 @@
+<!--index.wxml-->
+<!-- 引入header组件 -->
+<header-component avatar-url="{{avatarUrl}}"/>  
+<!-- 首页轮播组件 -->
+<banner-component />
+<!-- home content -->
+<!-- 淅川简介 -->
+<view class="introduction">
+  <view class='text-title'>淅川简介</view>
+  <image class='introduction-img' src='{{introduction.img}}'></image>
+  <view class='text-content' wx:for='{{introduction.text}}'>{{item}}</view>
+  <navigator url='{{aboutDetail}}' class='look-more'>查看更多></navigator>
+</view>
+<!-- 底部组件 -->
+<footer-component />
+
+
+
+
+
+
+

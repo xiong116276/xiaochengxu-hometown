@@ -1,0 +1,107 @@
+/* miniprogram/pages/leaveWords/leaveWords.wxss */
+.text-title{
+  text-align: center;
+  margin: 40rpx 0;
+  font-size: 40rpx;
+  font-weight: bold;
+  color: #3c763d;
+}
+.input-group{
+  margin-bottom: 20rpx;
+  font-size: 32rpx;
+}
+.input-group::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.input-group .input-title{
+  width: 30%;
+  float: left;
+  text-align: right;
+  color: #333;
+  height:60rpx;
+  line-height: 60rpx;
+}
+.input-group .input-title .star{
+  color: red;
+}
+.input-group .input-content{
+  width: 40%;
+  float: left;
+  border: 1px solid #ccc;
+  padding: 0 10rpx;
+  height:60rpx;
+  line-height: 60rpx;
+}
+.input-group textarea.input-content{
+  padding: 10rpx;
+  height: 240rpx;
+  width: 60%;
+}
+.btn-area{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 20rpx 0; 
+}
+
+.leave-words-list .words-list-top{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20rpx;
+  border-bottom: 1px solid #ccc;
+}
+.list-item{
+  padding: 20rpx;
+  margin: 0 20rpx;
+  border-bottom: 1px solid #ccc;
+}
+.list-item .item-top{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.list-item .item-top text{
+  margin-right: 20rpx;
+}
+.list-item .item-content{
+  margin: 20rpx;
+  text-indent: 50rpx;
+  
+}
+
+.pages{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 20rpx 0;
+}
+.pages button{
+  padding: 10rpx;
+  font-size: 30rpx;
+  line-height: 50rpx;
+}
+.page-choose{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.page-num{
+  line-height: 65rpx;
+}
+.page-input{
+  border: 1px solid #ccc;
+  width: 80rpx;
+  height: 65rpx;
+  line-height: 65rpx;
+  text-align: center;
+  margin: 0 20rpx;
+}
+.btn-skip{
+  padding: 10rpx;
+  font-size: 30rpx;
+  line-height: 50rpx;
+}

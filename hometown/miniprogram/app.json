@@ -1,0 +1,18 @@
+{
+  "cloud": true,
+  "pages": [
+    "pages/index/index",
+    "pages/scenery/scenery",
+    "pages/specialty/specialty",
+    "pages/about/about",
+    "pages/detail/detail",
+    "pages/leaveWords/leaveWords"
+  ],
+  "window": {
+    "backgroundColor": "#fff",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "我的家乡淅川",
+    "navigationBarTextStyle": "black"
+  }
+}

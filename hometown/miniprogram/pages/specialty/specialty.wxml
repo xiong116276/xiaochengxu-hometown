@@ -1,0 +1,9 @@
+<!--miniprogram/pages/scenery/scenery.wxml-->
+<!-- 引入header组件 -->
+<header-component avatar-url="{{avatarUrl}}"/>  
+<!-- 首页轮播 -->
+<banner-component />
+<!-- scenery item -->
+<showitem-component wx:for="{{showItem}}" wx:for-index="index" wx:key="{{index}}" item-data="{{item}}"/>
+<!-- 底部组件 -->
+<footer-component />

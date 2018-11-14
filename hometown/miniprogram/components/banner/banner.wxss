@@ -1,0 +1,17 @@
+/* components/banner/banner.wxss */
+page{
+  margin-top: 100rpx;
+}
+.home-banner{
+  height: 350rpx;
+}
+.banner-img{
+  height: 350rpx;
+}
+.banner-text{
+  position: absolute;
+  color: #fff;
+  bottom: 60rpx;
+  left: 20rpx;
+  font-size: 32rpx;
+}

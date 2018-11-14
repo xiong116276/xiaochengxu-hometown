@@ -1,0 +1,34 @@
+/**app.wxss**/
+
+/* common */
+page{
+  font-size: 28rpx;
+}
+view{
+  box-sizing: border-box;
+}
+
+image{
+  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.container {
+  display: flex;
+} 
+
+.text-title{
+  color: #3c763d;
+  font-weight: bold;
+  margin-bottom: 15rpx;
+  font-size: 34rpx;
+}
+
+.text-content{
+  text-indent: 54rpx;
+}
+.look-more{
+  color: green;
+  float: right;
+}

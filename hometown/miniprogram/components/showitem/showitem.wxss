@@ -1,0 +1,23 @@
+/* components/showItem/showItem.wxss */
+.show-item{
+  border: 1px solid #ccc;
+  padding: 20rpx;
+  margin: 20rpx;
+  border-radius: 10rpx;
+  text-align: center;
+}
+.show-item image{
+  width: 60%;
+  height: 300rpx;
+}
+.text-title{
+  color: #3c763d;
+  font-weight: bold;
+  margin-bottom: 15rpx;
+  font-size: 34rpx;
+  text-align: left;
+}
+.text-content{
+  text-align: left;
+  text-indent: 50rpx;
+}

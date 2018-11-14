@@ -1,0 +1,23 @@
+<!--miniprogram/pages/about/about.wxml-->
+<!-- 引入header组件 -->
+<header-component avatar-url="{{avatarUrl}}"/>  
+<!-- 首页轮播组件 -->
+<banner-component />
+<!-- 简介内容 -->
+<view class='about-content'>
+  <view class='about-describe'>
+    <view class='text-title'>{{aboutData.title}}</view>
+    <view class='text-describe' wx:for="{{aboutData.describe}}" wx:for-item="aboutItem">{{aboutItem}}</view>
+  </view>
+  <view class='quhau'>
+    <view class='text-title'>行政区划</view>
+    <view class='text-describe' wx:for="{{aboutData.quhua}}" wx:for-item="quhuaItem">{{quhuaItem}}</view>
+  </view>
+  <view class='adderss'>
+    <view class='text-title'>地理位置</view>
+    <view class='text-describe'>{{aboutData.address.text}}</view>
+  </view>
+  <map id="myMap" scale='12' style='width:100%;height:600rpx' markers="{{aboutData.address.markers}}" latitude='{{aboutData.address.pointX}}' longitude='{{aboutData.address.pointY}}' show-location show-compass></map>
+</view>
+<!-- 底部组件 -->
+<footer-component />
